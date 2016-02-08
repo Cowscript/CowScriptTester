@@ -1,2 +1,3 @@
 # CowScriptTester
-A test program to be uses to test the CowScript
+This program test the current version.
+It parse files in a dir. It take the time it takes to parser all files.
