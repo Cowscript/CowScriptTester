@@ -1,0 +1,7 @@
+use "error";
+
+u = [100 : 100];
+
+if(!u->hasKey(100) || !u->hasValue(100)){
+  error("u->hasKey or u->hasValue failed");
+}

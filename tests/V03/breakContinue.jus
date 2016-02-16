@@ -1,0 +1,12 @@
+use "error";
+i = 0;
+while(true){
+  if(i < 5){
+    continue;
+	error("fail continue");
+  }elseif(i == 10){
+    break;
+	error("fail break");
+  }
+  i++;
+}

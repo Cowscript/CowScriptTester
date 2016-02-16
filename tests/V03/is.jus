@@ -1,0 +1,9 @@
+use "error";
+
+class TestIs{}
+
+t = new TestIs();
+
+if(!(t is TestIs)){
+  error("t is TestIs. is failed");
+}

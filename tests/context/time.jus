@@ -1,0 +1,39 @@
+use "time";
+use "error";
+
+time = new Time(2016, 1, 12, 22, 18, 0);
+
+if(time->year() != 2016){
+   error("time->year() is not return the right year");
+}
+
+if(time->month() != 1){
+  error("time->month() is not return the right month");
+}
+
+if(time->week() != 2){
+  error("time->week() is not return the right week");
+}
+
+if(time->dayOfWeek() != 2){
+  error("time->dayOfWeek() is return the right day of week");
+}
+
+
+if(time->day() != 12){
+  error("time->day() is not return the day");
+}
+
+if(time->hour() != 22){
+  error("time->hour() is not return the hour");
+}
+
+if(time->minute() != 18){
+  error("time->minute() is not return the minute");
+}
+
+if(time->millisecond() != 0){
+  error("time->millisecond() is not return the millisecond");
+}
+
+new Time();

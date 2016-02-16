@@ -1,0 +1,12 @@
+array = [];
+array = ["hejsa", "hejsa", 4 : "3", "4"];
+ar    = ["hejsa", 0 : "hej"];
+
+//we add array to ar :)
+ar[0] = array;
+ar[]  = array;
+
+test = [];
+test[] = "hejsa med dig";
+test[10] = "hallo";
+test[] = "virker";

@@ -1,0 +1,5 @@
+use "random";
+
+rand = new Random();
+rand->seed(212312312);
+rand->next(0,10);

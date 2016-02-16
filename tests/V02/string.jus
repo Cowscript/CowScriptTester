@@ -1,0 +1,27 @@
+use "error";
+
+class TestString{
+  public static function toString(){
+     return new string("CowScript");
+  }
+}
+
+class Test{public function toString(){return "CowScript";}}
+
+if(TestString+"" != "CowScript"){
+  error("Failed to test TestString static toString method: "+TestString);
+}
+
+if(new Test()+"" != "CowScript"){
+  error("Failed to test TestString non static method");
+}
+
+test = "HeJsA";
+
+if(test->toLower() != "hejsa"){
+  error("test->toLower() failed: "+test->toLower());
+}
+
+if(test->toUpper() != "HEJSA"){
+  error("test->toUpper() failed: "+test->toUpper());
+}

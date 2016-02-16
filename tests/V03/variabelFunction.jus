@@ -1,0 +1,14 @@
+use "error";
+
+test = function string(name){
+   return "hallo "+name;
+};
+
+say = class{function say(f, name){return f(name);}};
+
+if(new say()->say(test, "cowscript") != "hallo cowscript"){
+  error("say->say(test, 'cowscript') dont return 'hallo cowscript'");
+}
+
+test = null;
+say = null;

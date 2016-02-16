@@ -1,0 +1,7 @@
+use "error";
+
+array = [1, 2, 3];
+
+if(array->length() != 3){
+ error("array->length() dont return 3 but: "+array->length());
+}

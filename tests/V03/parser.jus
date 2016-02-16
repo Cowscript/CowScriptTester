@@ -1,0 +1,3 @@
+use "parser";
+
+version();

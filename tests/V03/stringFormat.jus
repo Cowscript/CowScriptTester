@@ -1,0 +1,5 @@
+use "error";
+
+if(string->format("%s %s", ["hej", "cowscript"]) != "hej cowscript"){
+ error("string->format dont work");
+}

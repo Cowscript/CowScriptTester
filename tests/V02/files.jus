@@ -1,0 +1,7 @@
+use "error";
+use "tests/V02/test.cos";
+if(getMyName() != "CowScript"){
+   error("getMyName() return: "+getMyName() +". and as you see it was not CowScript");
+}
+
+func string test(){return "test";}

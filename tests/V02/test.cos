@@ -1,0 +1,17 @@
+function getName(){
+   return "CowScript";
+}
+
+public class TestName{
+  public static function getNames(){
+      return getName();
+  }
+  
+  public function GetName(){
+    return TestName->getNames();
+  }
+}
+
+public function getMyName(){
+   return new TestName()->GetName();
+}

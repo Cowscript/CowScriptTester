@@ -1,0 +1,5 @@
+use "error";
+
+if(2^3 != 8){
+ error("2^3 is 8 but the parser is not saying that: "+(2^3));
+}

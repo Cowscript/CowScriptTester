@@ -1,0 +1,21 @@
+use "regex";
+use "error";
+use "type";
+
+reg = new Regex("([a-zA-Z]*?)=([0-9]*)");
+
+if(!reg->match("hej=212 h=21821821 d=211212")){
+   error("'[a-zA-Z]*?=(.*?)' is not match");
+}
+
+exec = reg->exec("hej=212 h=21821821 d=211212");
+if(!type(exec, "array")){
+  error("Regex->exec is not return array");
+}
+
+
+foreach(exec as array){
+   if(!type(array, "array")){
+     error("sub of Regex->exec is not a array");
+   }
+}

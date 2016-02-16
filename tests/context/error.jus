@@ -1,0 +1,10 @@
+use "error";
+
+//here wee use errorCallback to get all error the interprenter is used :)
+function callback(string message, int line,int row){
+}
+
+errorCallback(callback);
+
+//will return in parser stop :)
+error("this should work");

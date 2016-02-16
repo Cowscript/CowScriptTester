@@ -1,0 +1,11 @@
+function string t(){
+}
+
+function bool b(){
+}
+
+class TestType{}
+
+function TestType testType(){}
+
+func testFunc(){}

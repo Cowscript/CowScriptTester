@@ -1,0 +1,4 @@
+//this is our error lib 
+use "error";
+use "type";
+use "array";

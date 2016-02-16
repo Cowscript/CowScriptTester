@@ -1,0 +1,68 @@
+//here wee got function. let try differens part of functions :)
+//load error function soo wee can send error when somthing is not goodday
+use "error";
+
+function boolToString(bool context){
+   if(context == true){
+       return "true";
+   }else{
+       return false;
+   }
+}
+
+function halloworld(){
+}
+
+halloworld();
+
+function sayGoodday(g,n){
+
+}
+
+sayGoodday("hej", "Ronnie");
+
+function goodday(name, hej="hej"){
+   u = hej+" "+name;
+   if(u != "hej ronnie" && u != "hi ronnie"){
+      error("test gooddays agumenter dont fit to the test case control it: "+u);
+   }
+}
+
+goodday("ronnie", "hi");
+goodday("ronnie");
+
+function myName(string name){
+   if(name != "Hejsa med dig"){
+      error("test myName agumenter dont fit to the test case controle it: "+name);
+   }
+}
+
+myName("Hejsa med dig");
+
+function boolean(bool b){
+   if(b == false){
+      error("test boolean agumenter dont fit to the test case controle it: "+boolToString(b));
+   }
+}
+
+boolean(true);
+
+function arrays(array a){
+}
+
+arrays([]);
+
+function ints(int i, int h){
+}
+
+ints(0,0);
+
+function functions(function f){
+   ints(0,0);
+}
+
+function tests(){
+    functions(ints);
+}
+
+tests();

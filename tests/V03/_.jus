@@ -1,0 +1,4 @@
+test_ = "hejsa";
+function test_(){
+}
+class test_test{}

@@ -1,0 +1,33 @@
+use "error";
+use "type";
+use "array";
+
+test = "hejsa";
+if(test->length() != 5){
+   error(test->length()+" is not 5");
+}
+
+if(test->substr(0,1) != "h"){
+   error(test->substr(0,1)+" is not 'h'");
+}
+
+if(test->substr(1) != "ejsa"){
+   error(test->substr(1)+" is not 'ejsa'");
+}
+
+indexOf = "!hje";
+if(indexOf->indexOf("!") != 0){
+    error("! is in index 0");
+}
+
+if(indexOf->indexOf("i") != -1){
+    error("'!hje' is not contaion 'i'");
+}
+
+if(!type(test->toChars(), "array")){
+    error("test->toChars() dont return a array");
+}
+
+if(count(test->toChars()) != 5){
+   error("count(test->toChars()) dont return 5")
+}

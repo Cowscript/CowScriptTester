@@ -1,0 +1,58 @@
+use "error";
+
+class Person{
+   private name;
+   public hallo = "Hejsa";
+   
+   Person(string name){
+      this->name = name;
+   }
+   
+   public function sayHallo(){
+        return this->hallo+" "+this->name;
+   }
+   
+   public static function myNameIs(string name){
+      return name;
+   }
+   
+   private static n;
+   
+   public static function setName(string name){
+         self->n = name;
+   }
+   
+   public static function getName(){
+          return self->n;
+   }
+}
+
+//try to say hallo :)
+person = new Person("Ronnie");
+if(person->sayHallo() != "Hejsa Ronnie"){
+  error(person->sayHallo()+" is not Hallo Ronnie");
+}
+
+test = new Person("bo");
+
+if(person->sayHallo() != "Hejsa Ronnie" || test->sayHallo() != "Hejsa bo"){
+   error(person->sayHallo()+" != 'Hejsa Ronnie' || test->sayHallo() != 'Hejsa bo' failed to be run. "+person->sayHallo()+"|"+test->sayHallo());
+}
+
+if(Person->myNameIs("ronnie") != "ronnie"){
+   error("Fail to test static Person->myNameIs('ronnie'). it return "+Person->myNameIs("ronnie"));
+}
+
+Person->setName("ronnie");
+
+if(Person->getName() != "ronnie"){
+   error("Fail to test static items: "+Person->getName());
+}
+
+function testPerson(Person person){
+   if(person->sayHallo() != "Hejsa Ronnie"){
+     error(person->sayHallo()+" is not Hejsa Ronnie");
+   }
+}
+
+testPerson(person);

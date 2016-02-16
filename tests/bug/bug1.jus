@@ -1,0 +1,7 @@
+//base64 plugin never push class to variabel databse
+use "base64";
+use "error";
+
+if(Base64->decode(Base64->encode("hejsa")) != "hejsa"){
+  error("Base64 plugin has a error");
+}

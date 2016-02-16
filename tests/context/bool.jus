@@ -1,0 +1,50 @@
+//let try some bool :)
+use "error";
+
+function testError(number){
+    error("This bool is broken: adsadsadsadas");
+}
+
+if(true || testError()){
+  //if no error this is success :)
+}
+
+if(false && testError() || true){
+  //if no error this is success
+}
+
+if(0 > 1){
+  error("0 is not bigger end 1");
+}
+
+if(0 >= 1){
+  error("0 is not equels or greater end 1");
+}
+
+if(2 < 1){
+    error("1 is not greater end 2");
+}
+
+if(2 <= 1){
+    error("1 is not equels or greater end 2");
+}
+
+if(2 <= 2){
+  //no error
+}else{
+  error("Error: 2<=2");
+}
+
+if(2 >= 2){
+//no error
+}else{
+  error("Error: 2 >= 2");
+}
+
+if(1 < 2){}else{
+  error("Error: 1 < 2");
+}
+
+if(2 > 1){}else{
+  error("Error: 2 > 1");
+}
