@@ -1,0 +1,14 @@
+use "error";
+
+//int can also be a object now :)
+i = new int(23);
+
+class d{public function int toInt(){return new int(2);}}
+
+function p(int t){
+ if(t != 2){
+   error("t should be 2");
+ }
+}
+
+p(new d());

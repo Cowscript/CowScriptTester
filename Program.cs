@@ -96,6 +96,7 @@ namespace test
                     return;
                 Energy e = new Energy();
                 e.setConfig("file.enabled", "true", false);
+                e.setConfig("error.log.file", "tests/log.txt", false);
                 e.push(print);
                 e.push(useage);
                 e.parse(file);

@@ -1,23 +1,2 @@
- V0.4
- -If the object has a method "toInt()" the variabel can be uses as int.
- -If the class has a static method "toInt()" the class name can be uses as int.
- -Replace int as class.
- Append a static method to int class "convert(data)" there can convert a given string to int, the defult return is 0.
- Append a class when be uses the object can be uses as array
- Set toInt in type plugin as not supportet.
- Only accept function and class in extern files.
- Append ? If the node befor ? Is true it will take the first node, else it will take after : it will look like this "bool ? node : node;"
- Append option to save error in a special files. 
- Append a database drivers so you can connect to different databases like MySQl.
- Append plugin "math" and pus cos tang and sin function to it.
-Change function/method call aguments so it interlize in specific length. When the length is trying to be overridden it will result in a error "Max aguments count is overriding.";
- Append plugin "config" with class "Config" with static method "get(string)", "isScriptLock()" and "set(string, string)" "isLocked(string)". If the config is set by system it will only allow override if the config is not lock. When use set it is not lock and can be change allways
-If config "tcp.enable" set to true there will be tcp plugin available. 
- Update config handler so if you change value in the config system there has set to not be overridden in the script it will don't care what you say it will change the value and set it to not be overridden.
- Append scriptLock to config class. When it is set it will not allow the script to change the config.
- Append isScriptLock to config class so you can control if the script is allowed to change the config class,
- If config has a value "file.system.enable" it open a plugin to allow the script to touch the compourters file system.
- Set timeouts controls to the config. The parser control if the parser is taking to long time and set error when it take to long time
- Remove create in ClassMethod and ClassStaticMethod. It should create self and not when use create.
- Append switch.
- Append error lang file. Here you can tell where the language files is and use it to show error in yous language.
+V0.5
+Rewriting the class handler.

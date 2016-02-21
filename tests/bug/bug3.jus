@@ -1,0 +1,4 @@
+function double(){}
+
+//befor this fix it will tell you can not override 'double'.
+new int(12345);

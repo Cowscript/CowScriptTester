@@ -1,0 +1,11 @@
+use "config";
+use "error";
+
+if(Config->isScriptLock()){
+  error("The config system is lock");
+}else{
+  Config->set("test", "true");
+  if(Config->get("test") != "true"){
+    error("Config system broken");
+  }
+}

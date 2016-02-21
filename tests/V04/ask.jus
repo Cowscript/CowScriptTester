@@ -1,0 +1,10 @@
+use "error";
+
+function b(bool t){
+  if(!t){
+    error("t is not true");
+  }
+}
+
+b(true ? true : false);
+b(false ? false : true);

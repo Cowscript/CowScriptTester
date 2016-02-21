@@ -1,0 +1,5 @@
+use "math";
+
+sin(10);
+cos(10);
+tan(10);
