@@ -1,0 +1,44 @@
+use "error";
+
+//in version 0.5 you can always extends class :)
+class TestClass extends string{
+  private name;
+
+  TestClass(string name){
+    this->set(name);
+  }
+
+  public function set(string value){
+     this->name = value;
+  }
+  
+  public function string toString(){return this->name;}
+}
+
+obj = new TestClass("CowScript");
+
+if("CowScript" != obj){
+  error("obj is not CowScript");
+}
+
+class TestInt extends int{
+   private number;
+
+   TestInt(int number){
+     this->number = number;
+   }
+   
+   public function toInt(){
+     return this->number;
+   }
+}
+
+obj = new TestInt(19);
+if(19 != obj){
+  error("obj is not 19");
+}
+
+//last control. this should work
+if(!(obj is int)){
+  error("obj is int should result in true");
+}

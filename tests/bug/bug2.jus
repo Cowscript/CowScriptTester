@@ -1,7 +1,9 @@
 //Token dont convert comma (.) currect but just save the char code. 
 //The int converter dont convert . Probely. It can convert it to , (the danish comma).
 use "error";
+var = 21211212121212;
 
 if("89.12" != 89.12+""){
+  print("in error");
   error("The parser dont convert comma correct: "+89.12);
 }
